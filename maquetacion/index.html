@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/30466ac44c.js" crossorigin="anonymous"></script>
     <title>Xacademy Clase 1 maquetacion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
         p {
             margin-right: 40px;
@@ -18,14 +24,133 @@
         }
         button.redondo {
             background-color: white;
-            border: 1px solid black;
+            border: 1px solid rgb(6, 6, 6);
             border-radius: 25px;
             padding: 0px 20px;
             height: 32px;
         }
+        .redondo:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transition: 0.5s;
+        }
+        button.redondo2 {
+            background-color: white;
+            border: 2px solid rgb(99, 74, 226);
+            border-radius: 25px;
+            padding: 0px 20px;
+            height: 32px;
+            color: rgb(99, 74, 226);
+            cursor: pointer
+        }
+        .redondo2:hover {
+            background-color: rgb(99, 74, 226);
+            color: white;
+            transition: 0.5s;
+        }
+
+        button.redondo3 {
+            background-color: white;
+            border: 1px solid rgb(6, 6, 6);
+            border-radius: 25px;
+            padding: 0px 20px;
+            height: 32px;
+            cursor: pointer ;
+        }
+
+        .redondo3:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            transition: 0.5s;
+        }
+        
         div#introduction-actions {
             display: flex;
             justify-content: center;
+            
+        }
+        p{
+            font-size: 15px;
+        }
+        .menu:hover:hover{
+            color :rgb(99, 74, 226);
+            cursor: pointer ;
+            transition: 0.5s;
+        }
+        button.insta{
+            border: 0;
+            background-color: white;
+            margin-left: 14px;
+            font-size: 16px;
+        }
+        .insta:hover{
+            color :rgb(99, 74, 226);
+            cursor: pointer ;
+        }
+        #box{
+            background-color: rgb(34, 18, 18);
+            color: white;
+            height: 400px;
+            width:max-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: rgb(28, 22, 32);
+            width: 100%;
+            height: 500px;
+            
+        }
+        .caja1{
+            background-color: rgb(28, 22, 32);
+            color: white;
+            width: 100%;
+            height: 100px;
+            float: left;
+            font-size: 50%;
+        }
+        .caja2{
+            background-color: rgb(28, 22, 32);
+            color: white;
+            width: 50%;
+            height: 100px;
+            float: left;
+        }
+        .caja3{
+            background-color: rgb(28, 22, 32);
+            color: white;
+            width: 50%;
+            height: 20%;
+            float: left;
+        }
+        .caja4{
+            background-color: rgb(28, 22, 32);
+            color: rgb(58, 56, 56);
+            width: 50%;
+            height: 10%;
+            float: right;
+        }
+        .titulo{
+            margin-left: 200px;
+            margin-top: 50px;
+            box-sizing: border-box;
+        }
+        .caja2{
+            padding-left: 200px;
+            padding-right: 30px;
+            box-sizing: border-box;
+        }
+        .caja3{
+            padding-top: 0px;
+            word-spacing: 60px;
+        }
+        .caja4{
+            padding-top: 0px;
+            color:rgb(107, 106, 106);
+            box-sizing: border-box;
+            word-spacing: 50px;
         }
     </style>
 </head>
@@ -34,13 +159,15 @@
         <div id="header-left">
             <img src="logo.svg">
         </div>
-        <div id="header-right" style="display: flex; align-items: center;">
-            <p>Nosotros</p>
-            <p>Programas</p>
-            <p>Capaciontaciones</p>
-            <p>Alianzas</p>
-            <p>Contacto</p>
-            <button class="redondo">Sumate +</button>
+        <div  id="header-right" style="display: flex; align-items: center;">
+            <p class="menu">Nosotros</p>
+            <p class="menu">Programas</p>
+            <p class="menu">Capacitaciones</p>
+            <p class="menu">Alianzas</p>
+            <p class="menu">Contacto</p>
+            <button class="redondo3" style="margin-left: 14px;">Sumate +</button>
+            <button class="insta"><i class="fa-brands fa-instagram"></i></button>
+            <button class="insta"><i class="fa-brands fa-linkedin-in"></i></button>
         </div>
     </div>
     <div id="introduction" style="padding: 48px;">
@@ -48,9 +175,26 @@
             <h1>Somos una Fundación dedicada a mejorar la calidad de vida de las personas y su entorno, a través de la tecnología.</h1>
         </div>
         <div id="introduction-actions" style="margin-top: 25px;">
-            <button class="redondo">Contactanos -></button>
-            <button class="redondo" style="margin-left: 14px;">Sumate +</button>
+            <button class="redondo">Contactanos <i class="fa-solid fa-arrow-right-long"></i></button>
+            <button class="redondo2" style="margin-left: 14px;">Sumate <i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
+     <div class="box">
+            <div class="caja1">
+                <p class="titulo" style="font-size:40px;">.Impacto</p>
+            </div>
+            <div class="caja2">
+                <p class="texto" style="font-size: 16px;">Buscamos construir alianzas y fortalecer vinculos para generar una tranformacion real en la comunidad.
+            Trabajamos para acercar la tecnologia innovadora y disruptiva del sector privado hacia el sector social.
+            </p>
+            </div>
+            <div class="caja3">
+            <p class="numero" style="font-size: 50px;">58 50 301</p>
+            </div>
+            <div class="caja4">
+                <p class="numero" style="font-size: 15px;">Localidades Mentores Participantes</p>
+                </div>
+    </div>
 </body>
+   
 </html>
